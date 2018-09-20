@@ -7,3 +7,9 @@ if not test -f ~/.config/fish/functions/fisher.fish
   # Install bass plugin, it provides compatibility with bash
   fisher edc/bass
 end
+
+# Base16 Shell
+if status --is-interactive
+    set BASE16_SHELL "$HOME/.config/base16-shell/"
+    source "$BASE16_SHELL/profile_helper.fish"
+end
