@@ -156,6 +156,9 @@ bar {
         tray_output    primary
 }
 
+# Hiding borders when possible
+hide_edge_borders both
+
 bindsym Control+Mod1+l exec i3lock -c 000000 -n
 
 exec_always nm-applet
