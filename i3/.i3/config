@@ -159,6 +159,9 @@ bar {
 # Hiding borders when possible
 hide_edge_borders both
 
+# Hide titlebar
+new_window pixel 0
+
 bindsym Control+Mod1+l exec i3lock -c 000000 -n
 
 exec_always nm-applet
