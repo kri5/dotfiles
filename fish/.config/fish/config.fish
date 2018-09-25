@@ -24,3 +24,7 @@ end
 if test -d $HOME/google-cloud-sdk
     source ~/google-cloud-sdk/path.fish.inc
 end
+
+alias ls=exa
+alias find=fd
+alias cat=bat
