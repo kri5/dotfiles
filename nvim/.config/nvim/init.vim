@@ -11,6 +11,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Base16 themes
 Plug 'chriskempson/base16-vim'
 
+" v2 of the nvim-completion-manager.
+Plug 'ncm2/ncm2'
+" dependency for ncm2
+Plug 'roxma/nvim-yarp'
+
 " Initialize plugin system
 call plug#end()
 
