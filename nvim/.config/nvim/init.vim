@@ -18,6 +18,9 @@ Plug 'chriskempson/base16-vim'
 " Syntax checking
 Plug 'vim-syntastic/syntastic'
 
+" Languages support
+Plug 'rust-lang/rust.vim'
+
 " v2 of the nvim-completion-manager.
 Plug 'ncm2/ncm2'
 " dependency for ncm2
