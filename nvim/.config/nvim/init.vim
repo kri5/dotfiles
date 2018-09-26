@@ -42,6 +42,9 @@ autocmd BufEnter  *  call ncm2#enable_for_buffer()
 " into the current line (noinsert).
 set completeopt=menuone,noselect,noinsert
 
+" Automatically format code when saving
+let g:rustfmt_autosave = 1
+
 " Syntastic configuration
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
