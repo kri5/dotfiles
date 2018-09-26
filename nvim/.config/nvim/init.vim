@@ -23,3 +23,11 @@ call plug#end()
 let base16colorspace=256
 " Sets base16 color theme
 colorscheme base16-eighties
+
+" Enable completion for any buffer
+autocmd BufEnter  *  call ncm2#enable_for_buffer()
+
+" This will show the popup menu even if there's only one match (menuone),
+" prevent automatic selection (noselect) and prevent automatic text injection
+" into the current line (noinsert).
+set completeopt=menuone,noselect,noinsert
