@@ -33,3 +33,4 @@ set fish_user_paths $GOPATH/bin
 alias ls=exa
 alias find=fd
 alias cat=bat
+alias grep=rg
