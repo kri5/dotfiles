@@ -8,5 +8,8 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Base16 themes
+Plug 'chriskempson/base16-vim'
+
 " Initialize plugin system
 call plug#end()
