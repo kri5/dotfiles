@@ -29,6 +29,7 @@ end
 set -x GOPATH $HOME/code/go
 set fish_user_paths $GOPATH/bin
 
+# Various aliases for modern utils replacements
 alias ls=exa
 alias find=fd
 alias cat=bat
