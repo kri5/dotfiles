@@ -25,6 +25,10 @@ if test -d $HOME/google-cloud-sdk
     source ~/google-cloud-sdk/path.fish.inc
 end
 
+# Sets GOPATH
+set -x GOPATH $HOME/code/go
+set fish_user_paths $GOPATH/bin
+
 alias ls=exa
 alias find=fd
 alias cat=bat
