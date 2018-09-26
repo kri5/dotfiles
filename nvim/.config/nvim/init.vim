@@ -13,3 +13,6 @@ Plug 'chriskempson/base16-vim'
 
 " Initialize plugin system
 call plug#end()
+
+" Sets base16 color theme
+colorscheme base16-eighties
