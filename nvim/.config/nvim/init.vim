@@ -15,6 +15,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Base16 themes
 Plug 'chriskempson/base16-vim'
 
+" Syntax checking
+Plug 'vim-syntastic/syntastic'
+
 " v2 of the nvim-completion-manager.
 Plug 'ncm2/ncm2'
 " dependency for ncm2
@@ -35,3 +38,9 @@ autocmd BufEnter  *  call ncm2#enable_for_buffer()
 " prevent automatic selection (noselect) and prevent automatic text injection
 " into the current line (noinsert).
 set completeopt=menuone,noselect,noinsert
+
+" Syntastic configuration
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
