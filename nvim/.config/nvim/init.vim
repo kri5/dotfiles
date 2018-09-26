@@ -34,6 +34,9 @@ let base16colorspace=256
 " Sets base16 color theme
 colorscheme base16-eighties
 
+" Always draw sign column. Prevent buffer moving when adding/deleting sign.
+set signcolumn=yes
+
 " Enable completion for any buffer
 autocmd BufEnter  *  call ncm2#enable_for_buffer()
 
