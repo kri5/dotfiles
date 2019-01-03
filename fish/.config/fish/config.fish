@@ -5,9 +5,9 @@ if not test -f ~/.config/fish/functions/fisher.fish
   # Run fisher to diplay information
   fisher
   # Install bass plugin, it provides compatibility with bash
-  fisher edc/bass
+  fisher add edc/bass
   # Install metro prompt
-  fisher metro
+  fisher add jorgebucaran/fish-metro
 end
 
 # Base16 Shell
