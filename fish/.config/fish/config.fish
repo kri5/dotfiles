@@ -35,3 +35,6 @@ alias ls=exa
 alias find=fd
 alias cat=bat
 alias grep=rg
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/kri5/code/laptop_install/google-cloud-sdk/path.fish.inc' ]; . '/home/kri5/code/laptop_install/google-cloud-sdk/path.fish.inc'; end
