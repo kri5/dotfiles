@@ -26,7 +26,8 @@ if test -d $HOME/google-cloud-sdk
 end
 
 # Sets GOPATH
-set -x GOPATH $HOME/code/go
+set -gx PATH /usr/local/go/bin $PATH
+set -x GOPATH $HOME/.go
 set fish_user_paths $GOPATH/bin
 
 # Various aliases for modern utils replacements
