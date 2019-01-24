@@ -160,6 +160,7 @@ for_window [class="^.*"] border pixel 1
 
 bindsym Control+Mod1+l exec i3lock -c 000000 -n
 
+exec_always dunst
 exec_always nm-applet
 exec_always blueman-applet
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
