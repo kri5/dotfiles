@@ -20,6 +20,7 @@ Plug 'vim-syntastic/syntastic'
 
 " Languages support
 Plug 'rust-lang/rust.vim'
+Plug 'google/vim-jsonnet'
 
 " v2 of the nvim-completion-manager.
 Plug 'ncm2/ncm2'
