@@ -35,6 +35,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# launch clipboard selection
+bindsym Shift+$mod+d exec CM_LAUNCHER=rofi clipmenu -i -fn Terminus:size=8 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -combi-modi window,drun,run,ssh -show combi -modi window,drun,run,ssh"
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -151,6 +154,9 @@ bindsym $mod+r mode "resize"
 
 # Start polybar to display a workspace bar
 exec --no-startup-id polybar laptop
+
+# Start clipboard daemon
+exec --no-startup-id clipmenud
 
 # Hiding borders when possible
 hide_edge_borders both
