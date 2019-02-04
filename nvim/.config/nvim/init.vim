@@ -21,6 +21,8 @@ Plug 'vim-syntastic/syntastic'
 " Languages support
 Plug 'rust-lang/rust.vim'
 Plug 'google/vim-jsonnet'
+Plug 'hashivim/vim-terraform'
+Plug 'juliosueiras/vim-terraform-completion'
 
 " v2 of the nvim-completion-manager.
 Plug 'ncm2/ncm2'
