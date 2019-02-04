@@ -19,8 +19,11 @@ Plug 'chriskempson/base16-vim'
 Plug 'vim-syntastic/syntastic'
 
 " Languages support
+" Rust
 Plug 'rust-lang/rust.vim'
+" Jsonnet
 Plug 'google/vim-jsonnet'
+" Terraform
 Plug 'hashivim/vim-terraform'
 Plug 'juliosueiras/vim-terraform-completion'
 
