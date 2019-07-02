@@ -64,8 +64,7 @@ modules-right = filesystem alsa pulseaudio xkeyboard memory cpu wlan eth battery
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
+tray-background = #00111111
 
 ;wm-restack = bspwm
 wm-restack = i3
