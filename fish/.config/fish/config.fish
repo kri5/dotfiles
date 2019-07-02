@@ -25,10 +25,9 @@ if test -d $HOME/google-cloud-sdk
     source $HOME/google-cloud-sdk/path.fish.inc
 end
 
-# Sets GOPATH
-set -gx PATH /usr/local/go/bin $PATH
-set -x GOPATH $HOME/.go
-set fish_user_paths $GOPATH/bin
+# Sets path to go binary and GOPATH
+set -U fish_user_paths $fish_user_paths $HOME/.go/bin
+set -U fish_user_paths $fish_user_paths $HOME/go/bin
 
 # Various aliases for modern utils replacements
 alias ls=exa
