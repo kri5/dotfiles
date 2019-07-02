@@ -25,6 +25,11 @@ if test -d $HOME/google-cloud-sdk
     source $HOME/google-cloud-sdk/path.fish.inc
 end
 
+# Source rustup env
+if test -d $HOME/.cargo
+    source $HOME/.cargo/env
+end
+
 # Sets path to go binary and GOPATH
 set -U fish_user_paths $fish_user_paths $HOME/.go/bin
 set -U fish_user_paths $fish_user_paths $HOME/go/bin
