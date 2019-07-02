@@ -66,10 +66,8 @@ tray-position = right
 tray-padding = 2
 tray-background = #00111111
 
-;wm-restack = bspwm
 wm-restack = i3
-
-;override-redirect = false
+override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
