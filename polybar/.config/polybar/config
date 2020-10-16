@@ -28,8 +28,8 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/laptop]
-monitor = ${env:MONITOR:HDMI-1}
-monitor-fallback = ${env:MONITOR:LVDS-1}
+monitor = ${env:MONITOR:eDP-1-1}
+monitor-fallback = ${env:MONITOR:HDMI-0}
 width = 100%
 height = 20
 ;offset-x = 1%
@@ -60,14 +60,14 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center =
-modules-right = filesystem alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem pulseaudio backlight-acpi xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
 tray-background = #00111111
 
-wm-restack = i3
-override-redirect = true
+;wm-restack = i3
+;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -86,9 +86,8 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+format = <label-layout> <label-indicator>
+format-spacing = 0
 
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
@@ -185,10 +184,10 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-output = LVDS-1
+output = eDP-1-1
 
 format = <label> <bar>
-label = BL
+label = %percentage%%
 
 bar-width = 10
 bar-indicator = |
