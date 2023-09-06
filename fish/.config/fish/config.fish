@@ -18,6 +18,9 @@ function fish_greeting
     fortune
 end
 
+starship init fish | source
+
+
 # Source kubectl include paths
 if test -d $HOME/google-cloud-sdk
     source $HOME/google-cloud-sdk/path.fish.inc
