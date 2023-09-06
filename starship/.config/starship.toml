@@ -4,6 +4,7 @@ disabled = false
 style = "dimmed blue"
 [kubernetes.context_aliases]
 "gke_nexttv-development-environment_europe-west1_primary" = "dev-primary"
+"gke_nexttv-staging-environment_europe-west1_primary" = "staging-primary"
 "gke_next-staging_europe-west1_testing" = "testing"
 
 [line_break]
