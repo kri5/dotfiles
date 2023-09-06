@@ -31,9 +31,9 @@ if test -d $HOME/.cargo
     source $HOME/.cargo/env
 end
 
-# Sets path to go binary and GOPATH
-set -U fish_user_paths $fish_user_paths $HOME/.go/bin
-set -U fish_user_paths $fish_user_paths $HOME/go/bin
+
+# Sets go binary path
+set -gx PATH $HOME/go/bin $PATH
 
 # Various aliases for modern utils replacements
 alias ls=exa
