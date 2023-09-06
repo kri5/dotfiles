@@ -31,6 +31,8 @@ if test -d $HOME/.cargo
     source $HOME/.cargo/env
 end
 
+# Sets rbenv binary path
+set -gx PATH $HOME/.rbenv/bin $PATH
 
 # Sets go binary path
 set -gx PATH $HOME/go/bin $PATH
