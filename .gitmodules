@@ -7,3 +7,6 @@
 [submodule "fish/.config/fish/completions/google-cloud-sdk-fish-completion"]
 	path = fish/.config/fish/completions/google-cloud-sdk-fish-completion
 	url = https://github.com/aliz-ai/google-cloud-sdk-fish-completion
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = git@github.com:kri5/kickstart.nvim.git
