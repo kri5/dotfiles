@@ -38,7 +38,7 @@ set -gx PATH $HOME/.rbenv/bin $PATH
 set -gx PATH $HOME/go/bin $PATH
 
 # Various aliases for modern utils replacements
-alias ls=exa
+alias ls=eza
 alias find=fd
 alias cat=bat
 alias grep=rg
