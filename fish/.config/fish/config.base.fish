@@ -26,10 +26,8 @@ if test -d $HOME/google-cloud-sdk
     source $HOME/google-cloud-sdk/path.fish.inc
 end
 
-# Source rustup env
-if test -d $HOME/.cargo
-    source $HOME/.cargo/env
-end
+# Sets rust binary path
+fish_add_path $HOME/.cargo/bin
 
 # Sets rbenv binary path
 set -gx PATH $HOME/.rbenv/bin $PATH
