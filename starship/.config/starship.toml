@@ -16,10 +16,10 @@ truncate_to_repo = true
 fish_style_pwd_dir_length = 1
 
 [aws]
-symbol = " "
+symbol = "☁️ "
 disabled = true
 
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
