@@ -179,6 +179,7 @@ set -gx PATH $PATH $HOME/.krew/bin
     enable = true;
     defaultEditor = true;
   };
+
   programs.zellij = {
     enable = true;
     enableFishIntegration = true;
