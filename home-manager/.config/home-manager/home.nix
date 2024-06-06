@@ -88,7 +88,10 @@
   ];
   home.activation = {
     install-kubectl-plugins = lib.hm.dag.entryAfter [ "installPackages" ] ''
-      PATH="${config.home.path}/bin:$PATH" $DRY_RUN_CMD krew install ctx ns;
+      PATH="${config.home.path}/bin:$PATH" $DRY_RUN_CMD krew install ctx ns view-allocations;
+    '';
+    set-npm-prefix = lib.hm.dag.entryAfter [ "installPackages" ] ''
+      PATH="${config.home.path}/bin:$PATH" $DRY_RUN_CMD npm set prefix ~/.npm-global;
     '';
   };
 
