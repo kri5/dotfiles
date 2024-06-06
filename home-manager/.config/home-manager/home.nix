@@ -157,9 +157,24 @@ fi";
 if test -f $HOME/.config/fish/config.base.fish
   source $HOME/.config/fish/config.base.fish
 end
+if test -f $HOME/.nix-profile/google-cloud-sdk/path.fish.inc
+  source $HOME/.nix-profile/google-cloud-sdk/path.fish.inc
+end
 ${config.home.path}/bin/skaffold completion fish | source
 set -gx PATH $PATH $HOME/.krew/bin
+set -gx PATH $PATH $HOME/.npm-global/bin
 '';
+    plugins = [
+      {
+        name = "google-cloud-sdk-fish-completion";
+        src = pkgs.fetchFromGitHub {
+          owner = "lgathy";
+          repo = "google-cloud-sdk-fish-completion";
+          rev = "master";
+          hash = "sha256-BIbzdxAj3mrf340l4hNkXwA13rIIFnC6BxM6YuJ7/w8=";
+        };
+      }
+    ];
   };
 
   programs.eza = {
