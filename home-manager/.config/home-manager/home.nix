@@ -123,6 +123,10 @@
   home.sessionVariables = {
   };
 
+  home.sessionPath = [
+    "/mnt/c/Windows/System32"
+  ];
+
   home.shellAliases = {
     find = "fd";
     k = "kubectl";
