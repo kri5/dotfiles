@@ -40,24 +40,51 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    pkgs.ansible
     pkgs.cpufetch
-    pkgs.dua
+    pkgs.dive
     pkgs.du-dust
+    pkgs.dua
+    pkgs.erdtree
     pkgs.eza
     pkgs.fd
     # we required to bring our own nix gcc, as it will be invoked by the nix installed
     # neovim, and if not, the system gcc will be used, and link to libraries that are
     # not in the LD_LIBRARY_PATH of the nix store
     pkgs.gcc
+    pkgs.gitlab-runner
+    pkgs.go
+    (pkgs.google-cloud-sdk.withExtraComponents [
+      pkgs.google-cloud-sdk.components.gke-gcloud-auth-plugin
+    ])
+    pkgs.grype
+    pkgs.httpie
+    pkgs.jd-diff-patch
+    pkgs.jp
+    pkgs.json2yaml
     pkgs.k9s
-    pkgs.kubernetes-helm
-    pkgs.kubectl
     pkgs.krew
+    pkgs.kubectl
+    pkgs.kubelogin-oidc
+    pkgs.kubernetes-helm
     pkgs.lemmeknow
     pkgs.neofetch
+    pkgs.nodejs_18
+    pkgs.openssl.dev
+    pkgs.podman
+    pkgs.ruby
     pkgs.rustup
     pkgs.skaffold
+    pkgs.sops
+    pkgs.sqlite-interactive
+    pkgs.terraform
+    pkgs.terragrunt
+    pkgs.tflint
     pkgs.tokei
+    (pkgs.vagrant.overrideAttrs (_: { doInstallCheck = false; }))
+    pkgs.velero
+    pkgs.wireguard-tools
+    pkgs.yaml2json
   ];
   home.activation = {
     install-kubectl-plugins = lib.hm.dag.entryAfter [ "installPackages" ] ''
