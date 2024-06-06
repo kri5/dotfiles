@@ -164,7 +164,8 @@ set -gx PATH $PATH $HOME/.krew/bin
 
   programs.eza = {
     enable = true;
-    enableAliases = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
   };
 
   programs.fzf = {
