@@ -161,6 +161,7 @@ if test -f $HOME/.nix-profile/google-cloud-sdk/path.fish.inc
   source $HOME/.nix-profile/google-cloud-sdk/path.fish.inc
 end
 ${config.home.path}/bin/skaffold completion fish | source
+${config.home.path}/bin/podman completion fish | source
 set -gx PATH $PATH $HOME/.krew/bin
 set -gx PATH $PATH $HOME/.npm-global/bin
 '';
